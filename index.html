@@ -4,16 +4,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>SportStreaming — Live Sports & Highlights</title>
-
-<!-- ==================== POPUNDER AD (Blogger same) ==================== -->
-<script data-cfasync="false" src="https://capitalhospitals.org/1/9b05666e2f2b90e0dbae98e8e535741b"></script>
-<!-- ==================== POPUNDER AD END ==================== -->
-
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, Helvetica, sans-serif; background: #0a0e17; color: #e8edf5; line-height: 1.6; }
 a { text-decoration: none; color: inherit; }
-img { max-width: 100%; height: auto; display: block; }
 
 .site-header { background: #0f1a2e; border-bottom: 2px solid #00e676; position: sticky; top: 0; z-index: 100; }
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
@@ -29,11 +23,8 @@ img { max-width: 100%; height: auto; display: block; }
 .section-heading { font-size: 20px; color: #fff; font-weight: 800; margin: 24px 0 16px; padding-left: 12px; border-left: 4px solid #00e676; }
 
 .article-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.article-card { background: #101a2c; border: 1px solid #1c2a44; border-radius: 10px; overflow: hidden; transition: border-color .2s; display: flex; flex-direction: column; }
+.article-card { background: #101a2c; border: 1px solid #1c2a44; border-radius: 10px; padding: 16px; transition: border-color .2s; display: flex; flex-direction: column; }
 .article-card:hover { border-color: #00e676; }
-.article-image { width: 100%; height: 140px; overflow: hidden; background: #1c2a44; }
-.article-image img { width: 100%; height: 100%; object-fit: cover; }
-.article-card-content { padding: 12px; display: flex; flex-direction: column; flex: 1; }
 .article-card h3 { font-size: 14px; line-height: 1.4; color: #fff; font-weight: 700; margin-bottom: 8px; }
 .article-card h3 a:hover { color: #00e676; }
 .article-card .card-date { color: #7a8ba3; font-size: 11px; margin-top: auto; margin-bottom: 12px; }
@@ -41,14 +32,11 @@ img { max-width: 100%; height: auto; display: block; }
 .open-btn { display: block; width: 100%; background: #ff1744; color: #fff !important; text-align: center; padding: 10px; border-radius: 6px; font-weight: 800; font-size: 14px; text-transform: uppercase; transition: background 0.2s; border: none; cursor: pointer; }
 .open-btn:hover { background: #d50000; }
 
-.featured { background: #101a2c; border: 1px solid #1c2a44; border-radius: 12px; overflow: hidden; margin-bottom: 24px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 0; }
-.featured-image { width: 100%; height: 280px; overflow: hidden; background: #1c2a44; }
-.featured-image img { width: 100%; height: 100%; object-fit: cover; }
-.featured-text { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
-.featured-text .featured-tag { display: inline-block; background: #ff1744; color: #fff; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 15px; text-transform: uppercase; margin-bottom: 12px; align-self: flex-start; }
-.featured-text h1 { font-size: 24px; line-height: 1.3; color: #fff; font-weight: 800; margin-bottom: 10px; }
-.featured-text h1 a:hover { color: #00e676; }
-.featured-text p { color: #9aabc2; font-size: 14px; margin-bottom: 16px; }
+.featured { background: #101a2c; border: 1px solid #1c2a44; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.featured .featured-tag { display: inline-block; background: #ff1744; color: #fff; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 15px; text-transform: uppercase; margin-bottom: 12px; }
+.featured h1 { font-size: 24px; line-height: 1.3; color: #fff; font-weight: 800; margin-bottom: 10px; }
+.featured h1 a:hover { color: #00e676; }
+.featured p { color: #9aabc2; font-size: 14px; margin-bottom: 16px; }
 
 .layout { display: grid; grid-template-columns: 3fr 1fr; gap: 24px; }
 .sidebar-widget { background: #101a2c; border: 1px solid #1c2a44; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
@@ -69,14 +57,11 @@ img { max-width: 100%; height: auto; display: block; }
 .page-title-bar p { color: #7a8ba3; font-size: 13px; margin-top: 6px; }
 
 .archive-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.archive-card { background: #101a2c; border: 1px solid #1c2a44; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.archive-card { background: #101a2c; border: 1px solid #1c2a44; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; }
 .archive-card:hover { border-color: #00e676; }
-.archive-image { width: 100%; height: 160px; overflow: hidden; background: #1c2a44; }
-.archive-image img { width: 100%; height: 100%; object-fit: cover; }
-.archive-content { padding: 14px; display: flex; flex-direction: column; flex: 1; }
-.archive-content h3 { font-size: 15px; color: #fff; line-height: 1.4; margin-bottom: 6px; font-weight: 700; }
-.archive-content h3 a:hover { color: #00e676; }
-.archive-content .archive-meta { color: #7a8ba3; font-size: 12px; margin-top: auto; margin-bottom: 12px; }
+.archive-card h3 { font-size: 15px; color: #fff; line-height: 1.4; margin-bottom: 6px; font-weight: 700; }
+.archive-card h3 a:hover { color: #00e676; }
+.archive-card .archive-meta { color: #7a8ba3; font-size: 12px; margin-top: auto; margin-bottom: 12px; }
 
 .blog-pager { display: flex; justify-content: center; gap: 10px; margin: 30px 0; }
 .blog-pager a { background: #101a2c; border: 1px solid #1c2a44; color: #00e676; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 700; }
@@ -94,7 +79,6 @@ img { max-width: 100%; height: auto; display: block; }
 .post-content h3 { font-size: 18px; color: #fff; margin: 20px 0 10px; }
 .post-content p { margin-bottom: 14px; }
 .post-content a { color: #00e676; text-decoration: underline; }
-.post-content img { border-radius: 6px; margin: 16px 0; }
 .post-content ul, .post-content ol { margin: 14px 0; padding-left: 22px; }
 .post-content li { margin-bottom: 6px; }
 
@@ -122,8 +106,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
-  .featured { grid-template-columns: 1fr; }
-  .featured-image { height: 220px; }
   .article-grid { grid-template-columns: repeat(2, 1fr); }
   .archive-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; }
@@ -137,8 +119,8 @@ img { max-width: 100%; height: auto; display: block; }
   .footer-inner { grid-template-columns: 1fr; }
   .post-title { font-size: 20px; }
   .single-post { padding: 16px; }
-  .featured-text { padding: 16px; }
-  .featured-text h1 { font-size: 18px; }
+  .featured { padding: 16px; }
+  .featured h1 { font-size: 18px; }
 }
 </style>
 </head>
@@ -194,25 +176,18 @@ img { max-width: 100%; height: auto; display: block; }
 <button class="scroll-to-top" id="scrollToTopBtn" type="button">↑</button>
 
 <script>
-/* ============ POSTS ============ */
+/* ============ POSTS (NO IMAGES) ============ */
 const POSTS = [
-  { id: 1, title: "Real Madrid vs Barcelona — El Clásico Highlights", image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800", labels: ["Football","Featured"], date: "Nov 20, 2024", author: "Admin", content: "<p>El Clásico always delivers. Catch the full match highlights below.</p><h2>Match Summary</h2><p>Late drama as Bellingham sealed it.</p><h3>Goals</h3><ul><li>23' — Vinícius Jr.</li><li>56' — Lewandowski</li><li>89' — Bellingham</li></ul>" },
-  { id: 2, title: "India vs Pakistan — T20 World Cup Full Match", image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800", labels: ["Cricket","Featured"], date: "Nov 19, 2024", author: "Admin", content: "<p>Watch the historic India vs Pakistan clash.</p><h2>Key Moments</h2><p>Thrilling last-over finish.</p>" },
-  { id: 3, title: "Premier League — Manchester City vs Liverpool", image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800", labels: ["Football"], date: "Nov 18, 2024", author: "Admin", content: "<p>Two title contenders head-to-head.</p>" },
-  { id: 4, title: "Champions League Final — Extended Highlights", image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800", labels: ["Football"], date: "Nov 17, 2024", author: "Admin", content: "<p>Extended highlights of the greatest UCL final.</p>" },
-  { id: 5, title: "Big Bash League — Sydney Sixers vs Melbourne Stars", image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800", labels: ["Cricket"], date: "Nov 16, 2024", author: "Admin", content: "<p>Full BBL thriller replay.</p>" },
-  { id: 6, title: "FIFA World Cup Qualifier — Brazil vs Argentina", image: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800", labels: ["Football"], date: "Nov 15, 2024", author: "Admin", content: "<p>South American giants clash.</p>" }
+  { id: 1, title: "Real Madrid vs Barcelona — El Clásico Highlights", labels: ["Football","Featured"], date: "Nov 20, 2024", author: "Admin", content: "<p>El Clásico always delivers. Catch the full match highlights below.</p><h2>Match Summary</h2><p>Late drama as Bellingham sealed it.</p><h3>Goals</h3><ul><li>23' — Vinícius Jr.</li><li>56' — Lewandowski</li><li>89' — Bellingham</li></ul>" },
+  { id: 2, title: "India vs Pakistan — T20 World Cup Full Match", labels: ["Cricket","Featured"], date: "Nov 19, 2024", author: "Admin", content: "<p>Watch the historic India vs Pakistan clash.</p><h2>Key Moments</h2><p>Thrilling last-over finish.</p>" },
+  { id: 3, title: "Premier League — Manchester City vs Liverpool", labels: ["Football"], date: "Nov 18, 2024", author: "Admin", content: "<p>Two title contenders head-to-head.</p>" },
+  { id: 4, title: "Champions League Final — Extended Highlights", labels: ["Football"], date: "Nov 17, 2024", author: "Admin", content: "<p>Extended highlights of the greatest UCL final.</p>" },
+  { id: 5, title: "Big Bash League — Sydney Sixers vs Melbourne Stars", labels: ["Cricket"], date: "Nov 16, 2024", author: "Admin", content: "<p>Full BBL thriller replay.</p>" },
+  { id: 6, title: "FIFA World Cup Qualifier — Brazil vs Argentina", labels: ["Football"], date: "Nov 15, 2024", author: "Admin", content: "<p>South American giants clash.</p>" }
 ];
 
 /* ============ CONFIG ============ */
 const SMARTLINK = "https://budgetezy.org/4/2e3f86a483123ee236db5dca4785d436";
-const PLACEHOLDER = "https://via.placeholder.com/400x250/1c2a44/00e676?text=Sport";
-
-/* ============ HELPERS ============ */
-function imgTag(p){
-  const src = p.image || PLACEHOLDER;
-  return `<img src="${src}" alt="${p.title}" loading="lazy">`;
-}
 
 /* ============ ROUTER ============ */
 const params = new URLSearchParams(location.search);
@@ -242,7 +217,7 @@ function renderPost(){
         </div>
         <div class="post-content">${post.content}</div>
         <div style="text-align:center;margin:24px 0;">
-          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank" style="display:inline-block;width:auto;padding:14px 40px;font-size:16px;">Open Link ▶</a>
+          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" style="display:inline-block;width:auto;padding:14px 40px;font-size:16px;">Open Link ▶</a>
         </div>
         <nav class="post-nav">
           ${prev ? `<a href="index.html?id=${prev.id}">← Previous Post</a>` : ''}
@@ -267,12 +242,9 @@ function renderArchive(){
     <section class="archive-grid">
       ${list.map(p => `
         <article class="archive-card">
-          <div class="archive-image"><a href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">${imgTag(p)}</a></div>
-          <div class="archive-content">
-            <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
-            <div class="archive-meta">${p.date || ''}</div>
-            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
-          </div>
+          <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
+          <div class="archive-meta">${p.date || ''}</div>
+          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
         </article>`).join('')}
     </section>
     <div class="blog-pager"><a href="index.html">Home</a></div>`;
@@ -286,24 +258,18 @@ function renderHome(){
       <main>
         ${featured ? `
         <section class="featured">
-          <div class="featured-image"><a href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">${imgTag(featured)}</a></div>
-          <div class="featured-text">
-            <span class="featured-tag">🔥 Featured</span>
-            <h1><a href="index.html?id=${featured.id}">${featured.title}</a></h1>
-            <p>Latest sports news, match highlights, and live updates.</p>
-            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
-          </div>
+          <span class="featured-tag">🔥 Featured</span>
+          <h1><a href="index.html?id=${featured.id}">${featured.title}</a></h1>
+          <p>Latest sports news, match highlights, and live updates.</p>
+          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
         </section>` : ''}
         <h2 class="section-heading">Latest Matches</h2>
         <section class="article-grid">
           ${gridPosts.map(p => `
             <article class="article-card">
-              <div class="article-image"><a href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">${imgTag(p)}</a></div>
-              <div class="article-card-content">
-                <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
-                <div class="card-date">${p.date || ''}</div>
-                <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
-              </div>
+              <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
+              <div class="card-date">${p.date || ''}</div>
+              <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
             </article>`).join('')}
         </section>
       </main>
@@ -324,7 +290,7 @@ function renderHome(){
         </div>
         <div class="sidebar-widget">
           <div class="sidebar-widget-title">🔴 Live Stream</div>
-          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Watch Live Now</a>
+          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Watch Live Now</a>
         </div>
       </aside>
     </div>`;
@@ -342,19 +308,16 @@ else if(label || q) renderArchive();
 else                renderHome();
 
 /* ============================================================
-   🔥 AUTO CLICK — SAME TAB REDIRECT (Blogger এর মতো)
-   2.5s পর সরাসরি smartlink এ redirect হবে, কোনো popup নেই
+   🔥 AUTO CLICK — SAME TAB REDIRECT (2.5s)
    ============================================================ */
 window.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     var openBtns = document.querySelectorAll('.auto-click-btn');
     if (openBtns.length > 0) {
-      var targetBtn = openBtns[0];
-      window.location.href = targetBtn.href;
+      window.location.href = openBtns[0].href;
     }
   }, 2500);
 });
-/* ============================================================ */
 
 /* ============ SCROLL TO TOP ============ */
 const topBtn = document.getElementById('scrollToTopBtn');
