@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>SportStreaming — Live Sports & Highlights</title>
 <style>
-/* ============ FAST THEME CSS ============ */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -51,19 +50,12 @@ img { max-width: 100%; height: auto; display: block; }
 .main-nav a:hover { color: #00e676; }
 
 /* CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 16px;
-}
+.container { max-width: 1200px; margin: 20px auto; padding: 0 16px; }
 
 /* SECTION HEADING */
 .section-heading {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 800;
-  margin: 24px 0 16px;
-  padding-left: 12px;
+  font-size: 20px; color: #fff; font-weight: 800;
+  margin: 24px 0 16px; padding-left: 12px;
   border-left: 4px solid #00e676;
 }
 
@@ -74,123 +66,77 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 16px;
 }
 .article-card {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 10px;
-  overflow: hidden;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 10px; overflow: hidden;
   transition: border-color .2s;
-  display: flex;
-  flex-direction: column;
+  display: flex; flex-direction: column;
 }
 .article-card:hover { border-color: #00e676; }
 .article-image {
-  width: 100%;
-  height: 140px;
-  overflow: hidden;
-  background: #1c2a44;
+  width: 100%; height: 140px; overflow: hidden; background: #1c2a44;
 }
 .article-image img { width: 100%; height: 100%; object-fit: cover; }
 .article-card-content { padding: 12px; display: flex; flex-direction: column; flex: 1; }
 .article-card h3 {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 14px; line-height: 1.4; color: #fff;
+  font-weight: 700; margin-bottom: 8px;
 }
 .article-card h3 a:hover { color: #00e676; }
 .article-card .card-date {
-  color: #7a8ba3;
-  font-size: 11px;
-  margin-top: auto;
-  margin-bottom: 12px;
+  color: #7a8ba3; font-size: 11px;
+  margin-top: auto; margin-bottom: 12px;
 }
 
 /* OPEN BUTTON */
 .open-btn {
-  display: block;
-  width: 100%;
-  background: #ff1744;
-  color: #fff !important;
-  text-align: center;
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: 800;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: background 0.2s;
-  border: none;
-  cursor: pointer;
+  display: block; width: 100%;
+  background: #ff1744; color: #fff !important;
+  text-align: center; padding: 10px;
+  border-radius: 6px; font-weight: 800;
+  font-size: 14px; text-transform: uppercase;
+  transition: background 0.2s; border: none; cursor: pointer;
 }
 .open-btn:hover { background: #d50000; }
 
 /* FEATURED */
 .featured {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 24px;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 0;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 12px; overflow: hidden;
+  margin-bottom: 24px; display: grid;
+  grid-template-columns: 1.2fr 1fr; gap: 0;
 }
 .featured-image {
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  background: #1c2a44;
+  width: 100%; height: 280px; overflow: hidden; background: #1c2a44;
 }
 .featured-image img { width: 100%; height: 100%; object-fit: cover; }
 .featured-text { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
 .featured-text .featured-tag {
-  display: inline-block;
-  background: #ff1744;
-  color: #fff;
-  font-size: 10px;
-  font-weight: 800;
-  padding: 4px 10px;
-  border-radius: 15px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  align-self: flex-start;
+  display: inline-block; background: #ff1744; color: #fff;
+  font-size: 10px; font-weight: 800; padding: 4px 10px;
+  border-radius: 15px; text-transform: uppercase;
+  margin-bottom: 12px; align-self: flex-start;
 }
 .featured-text h1 {
-  font-size: 24px;
-  line-height: 1.3;
-  color: #fff;
-  font-weight: 800;
-  margin-bottom: 10px;
+  font-size: 24px; line-height: 1.3; color: #fff;
+  font-weight: 800; margin-bottom: 10px;
 }
 .featured-text h1 a:hover { color: #00e676; }
 .featured-text p { color: #9aabc2; font-size: 14px; margin-bottom: 16px; }
 
 /* SIDEBAR */
-.layout {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 24px;
-}
+.layout { display: grid; grid-template-columns: 3fr 1fr; gap: 24px; }
 .sidebar-widget {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 16px;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 10px; padding: 16px; margin-bottom: 16px;
 }
 .sidebar-widget-title {
-  font-size: 15px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 12px;
-  padding-bottom: 10px;
+  font-size: 15px; font-weight: 800; color: #fff;
+  margin-bottom: 12px; padding-bottom: 10px;
   border-bottom: 1px solid #1c2a44;
 }
 .side-list { list-style: none; }
 .side-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid #1c2a44;
-  font-size: 13px;
+  padding: 8px 0; border-bottom: 1px solid #1c2a44; font-size: 13px;
 }
 .side-list li:last-child { border-bottom: none; }
 .side-list a { color: #d5deea; }
@@ -199,146 +145,88 @@ img { max-width: 100%; height: auto; display: block; }
 /* SEARCH */
 .search-form { display: flex; gap: 6px; }
 .search-form input {
-  flex: 1;
-  padding: 8px 10px;
-  background: #0d1420;
-  border: 1px solid #1c2a44;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 13px;
+  flex: 1; padding: 8px 10px;
+  background: #0d1420; border: 1px solid #1c2a44;
+  border-radius: 6px; color: #fff; font-size: 13px;
 }
 .search-form input:focus { outline: none; border-color: #00e676; }
 .search-form button {
-  background: #00e676;
-  color: #0a0e17;
-  border: none;
-  padding: 0 14px;
-  border-radius: 6px;
-  font-weight: 800;
-  cursor: pointer;
-  font-size: 13px;
+  background: #00e676; color: #0a0e17; border: none;
+  padding: 0 14px; border-radius: 6px;
+  font-weight: 800; cursor: pointer; font-size: 13px;
 }
 
 /* PAGE TITLE BAR */
 .page-title-bar {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-left: 4px solid #00e676;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-left: 4px solid #00e676; border-radius: 8px;
+  padding: 20px; margin-bottom: 20px;
 }
-.page-title-bar h1 {
-  font-size: 22px;
-  color: #fff;
-  font-weight: 800;
-}
-.page-title-bar p {
-  color: #7a8ba3;
-  font-size: 13px;
-  margin-top: 6px;
-}
+.page-title-bar h1 { font-size: 22px; color: #fff; font-weight: 800; }
+.page-title-bar p { color: #7a8ba3; font-size: 13px; margin-top: 6px; }
 
 /* ARCHIVE GRID */
 .archive-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
 }
 .archive-card {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 10px; overflow: hidden;
+  display: flex; flex-direction: column;
 }
 .archive-card:hover { border-color: #00e676; }
 .archive-image {
-  width: 100%;
-  height: 160px;
-  overflow: hidden;
-  background: #1c2a44;
+  width: 100%; height: 160px; overflow: hidden; background: #1c2a44;
 }
 .archive-image img { width: 100%; height: 100%; object-fit: cover; }
 .archive-content { padding: 14px; display: flex; flex-direction: column; flex: 1; }
 .archive-content h3 {
-  font-size: 15px;
-  color: #fff;
-  line-height: 1.4;
-  margin-bottom: 6px;
-  font-weight: 700;
+  font-size: 15px; color: #fff; line-height: 1.4;
+  margin-bottom: 6px; font-weight: 700;
 }
 .archive-content h3 a:hover { color: #00e676; }
 .archive-content .archive-meta {
-  color: #7a8ba3;
-  font-size: 12px;
-  margin-top: auto;
-  margin-bottom: 12px;
+  color: #7a8ba3; font-size: 12px;
+  margin-top: auto; margin-bottom: 12px;
 }
 
 /* PAGINATION */
 .blog-pager {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 30px 0;
+  display: flex; justify-content: center; gap: 10px; margin: 30px 0;
 }
 .blog-pager a {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  color: #00e676;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 13px;
-  font-weight: 700;
+  background: #101a2c; border: 1px solid #1c2a44;
+  color: #00e676; padding: 8px 16px; border-radius: 6px;
+  font-size: 13px; font-weight: 700;
 }
 .blog-pager a:hover { background: #00e676; color: #0a0e17; }
 
 /* SINGLE POST */
 .single-post-container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 16px;
+  max-width: 800px; margin: 20px auto; padding: 0 16px;
 }
 .single-post {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 12px;
-  padding: 24px;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 12px; padding: 24px;
 }
 .post-categories { margin-bottom: 12px; }
 .post-categories a {
-  color: #00e676;
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #00e676; font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1px;
   margin-right: 6px;
 }
 .post-title {
-  font-size: 26px;
-  line-height: 1.3;
-  color: #fff;
-  margin-bottom: 12px;
-  font-weight: 800;
+  font-size: 26px; line-height: 1.3; color: #fff;
+  margin-bottom: 12px; font-weight: 800;
 }
 .post-meta {
-  color: #7a8ba3;
-  font-size: 13px;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #1c2a44;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  color: #7a8ba3; font-size: 13px; margin-bottom: 20px;
+  padding-bottom: 16px; border-bottom: 1px solid #1c2a44;
+  display: flex; gap: 16px; flex-wrap: wrap;
 }
 .post-meta .meta-label { color: #00e676; font-weight: 700; }
 .post-content {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #c5d0e0;
-  margin-bottom: 24px;
+  font-size: 15px; line-height: 1.8; color: #c5d0e0; margin-bottom: 24px;
 }
 .post-content h2 { font-size: 22px; color: #fff; margin: 24px 0 12px; }
 .post-content h3 { font-size: 18px; color: #fff; margin: 20px 0 10px; }
@@ -348,57 +236,42 @@ img { max-width: 100%; height: auto; display: block; }
 .post-content ul, .post-content ol { margin: 14px 0; padding-left: 22px; }
 .post-content li { margin-bottom: 6px; }
 .post-content table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-.post-content table th, .post-content table td { border: 1px solid #1c2a44; padding: 8px; }
+.post-content table th, .post-content table td {
+  border: 1px solid #1c2a44; padding: 8px;
+}
 .post-content table th { background: #1c2a44; color: #00e676; }
 
 /* POST NAV */
 .post-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-top: 24px;
-  padding-top: 20px;
+  display: flex; justify-content: space-between;
+  gap: 16px; margin-top: 24px; padding-top: 20px;
   border-top: 1px solid #1c2a44;
 }
 .post-nav a {
-  color: #00e676;
-  font-weight: 700;
-  font-size: 13px;
-  max-width: 48%;
+  color: #00e676; font-weight: 700; font-size: 13px; max-width: 48%;
 }
 .post-nav a:hover { text-decoration: underline; }
 .post-nav .next { text-align: right; margin-left: auto; }
 
 /* NO POSTS */
 .no-posts {
-  background: #101a2c;
-  border: 1px solid #1c2a44;
-  border-radius: 10px;
-  padding: 40px 20px;
-  text-align: center;
+  background: #101a2c; border: 1px solid #1c2a44;
+  border-radius: 10px; padding: 40px 20px; text-align: center;
 }
 .no-posts h2 { color: #fff; font-size: 20px; margin-bottom: 8px; }
 .no-posts p { color: #7a8ba3; font-size: 14px; }
 
 /* FOOTER */
 .site-footer {
-  background: #0d1420;
-  border-top: 2px solid #00e676;
-  margin-top: 40px;
-  padding: 40px 16px 20px;
+  background: #0d1420; border-top: 2px solid #00e676;
+  margin-top: 40px; padding: 40px 16px 20px;
 }
 .footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 30px;
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px;
 }
 .footer-title {
-  color: #00e676;
-  font-size: 15px;
-  font-weight: 800;
-  margin-bottom: 12px;
+  color: #00e676; font-size: 15px; font-weight: 800; margin-bottom: 12px;
 }
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 8px; }
@@ -406,35 +279,78 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-links a:hover { color: #00e676; }
 .footer-about p { color: #9aabc2; font-size: 13px; line-height: 1.7; }
 .footer-bottom {
-  max-width: 1200px;
-  margin: 24px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid #1c2a44;
-  text-align: center;
-  color: #7a8ba3;
-  font-size: 12px;
+  max-width: 1200px; margin: 24px auto 0;
+  padding-top: 20px; border-top: 1px solid #1c2a44;
+  text-align: center; color: #7a8ba3; font-size: 12px;
 }
 
 /* SCROLL TOP */
 .scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: #00e676;
-  color: #0a0e17;
-  border: none;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-  z-index: 99;
+  position: fixed; bottom: 20px; right: 20px;
+  width: 44px; height: 44px; border-radius: 10px;
+  background: #00e676; color: #0a0e17; border: none;
+  cursor: pointer; display: none; align-items: center;
+  justify-content: center; font-size: 20px;
+  font-weight: bold; z-index: 99;
 }
 .scroll-to-top.show { display: flex; }
+
+/* ============ AD OVERLAY (Blogger-style) ============ */
+#adOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+#adOverlay.active { display: flex; }
+.ad-box {
+  background: #101a2c;
+  border: 2px solid #00e676;
+  border-radius: 16px;
+  padding: 36px 28px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,230,118,0.35);
+  animation: adPop .35s ease;
+}
+@keyframes adPop {
+  0% { transform: scale(.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.ad-icon { font-size: 48px; margin-bottom: 12px; }
+.ad-box h2 {
+  color: #fff; font-size: 22px; margin-bottom: 10px; font-weight: 800;
+}
+.ad-box p {
+  color: #9aabc2; font-size: 14px; margin-bottom: 22px;
+}
+.ad-go {
+  display: block;
+  background: #ff1744;
+  color: #fff !important;
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(255,23,68,0.4);
+  transition: transform .15s;
+}
+.ad-go:hover { transform: translateY(-2px); background: #d50000; }
+.ad-skip {
+  background: none; border: none;
+  color: #7a8ba3; font-size: 12px;
+  margin-top: 16px; cursor: pointer;
+  text-decoration: underline;
+}
+.ad-skip:hover { color: #e8edf5; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -456,6 +372,8 @@ img { max-width: 100%; height: auto; display: block; }
   .single-post { padding: 16px; }
   .featured-text { padding: 16px; }
   .featured-text h1 { font-size: 18px; }
+  .ad-box { padding: 24px 18px; }
+  .ad-box h2 { font-size: 18px; }
 }
 </style>
 </head>
@@ -513,10 +431,26 @@ img { max-width: 100%; height: auto; display: block; }
 
 <button class="scroll-to-top" id="scrollToTopBtn" type="button">↑</button>
 
+<!-- ============ AD OVERLAY ============ -->
+<div id="adOverlay">
+  <div class="ad-box">
+    <div class="ad-icon">⚽</div>
+    <h2>Ready to Stream?</h2>
+    <p>Click below to watch the live match now</p>
+    <a id="adGoBtn"
+       class="ad-go"
+       href="#"
+       target="_blank"
+       rel="nofollow sponsored">
+      Continue ▶
+    </a>
+    <button class="ad-skip" onclick="closeAd()">Skip Ad</button>
+  </div>
+</div>
+
 <script>
 /* ============================================================
    ⚠️ এখানে আপনার সব POSTS যোগ করুন
-   প্রতিটা পোস্টে থাকবে: id, title, image, labels[], date, author, content
    ============================================================ */
 const POSTS = [
   {
@@ -590,10 +524,12 @@ const POSTS = [
 ];
 
 /* ============================================================
-   CONFIG
+   CONFIG — আপনার smartlink এখানে বসান
    ============================================================ */
-const SMARTLINK = "https://budgetezy.org/4/2e3f86a483123ee236db5dca4785d436";
+const SMARTLINK  = "https://budgetezy.org/4/2e3f86a483123ee236db5dca4785d436";
 const PLACEHOLDER = "https://via.placeholder.com/400x250/1c2a44/00e676?text=Sport";
+const AD_DELAY_MS = 2500;  // 2.5s পরে overlay
+const AD_ENABLED  = true;  // false করলে ad বন্ধ
 
 /* ============================================================
    HELPERS
@@ -604,11 +540,7 @@ function imgTag(p){
 }
 
 /* ============================================================
-   ROUTER — URL query দিয়ে page decide হবে
-   index.html            → Homepage
-   index.html?id=3       → Single post
-   index.html?label=Football → Label archive
-   index.html?q=...      → Search results
+   ROUTER
    ============================================================ */
 const params = new URLSearchParams(location.search);
 const postId = params.get('id');
@@ -616,7 +548,7 @@ const label  = params.get('label');
 const q      = params.get('q');
 const app    = document.getElementById('app');
 
-/* ---------- SINGLE POST VIEW ---------- */
+/* ---------- SINGLE POST ---------- */
 function renderPost(){
   const post = POSTS.find(p => String(p.id) === String(postId));
   if(!post){
@@ -625,7 +557,6 @@ function renderPost(){
     return;
   }
   document.title = post.title + ' — SportStreaming';
-
   const idx  = POSTS.findIndex(p => String(p.id) === String(postId));
   const prev = POSTS[idx - 1];
   const next = POSTS[idx + 1];
@@ -647,6 +578,7 @@ function renderPost(){
 
         <div style="text-align:center;margin:24px 0;">
           <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored"
+             target="_blank"
              style="display:inline-block;width:auto;padding:14px 40px;font-size:16px;">
             Open Link ▶</a>
         </div>
@@ -656,22 +588,18 @@ function renderPost(){
           ${next ? `<a class="next" href="index.html?id=${next.id}">Next Post →</a>` : ''}
         </nav>
       </article>
-
       <div style="text-align:center;margin-top:24px;">
         <a href="index.html" style="color:#00e676;font-weight:700;">← Back to Home</a>
       </div>
     </div>`;
 }
 
-/* ---------- ARCHIVE (LABEL / SEARCH) ---------- */
+/* ---------- ARCHIVE ---------- */
 function renderArchive(){
   let list = [...POSTS];
   if(label) list = list.filter(p => (p.labels||[]).includes(label));
   if(q)     list = list.filter(p => p.title.toLowerCase().includes(q.toLowerCase()));
-
-  const heading = label ? `🏆 ${label}`
-                : q     ? `🔍 Search: ${q}`
-                : 'Archive';
+  const heading = label ? `🏆 ${label}` : q ? `🔍 Search: ${q}` : 'Archive';
 
   if(list.length === 0){
     app.innerHTML = `
@@ -695,7 +623,7 @@ function renderArchive(){
           <div class="archive-content">
             <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
             <div class="archive-meta">${p.date || ''}</div>
-            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
+            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
           </div>
         </article>
       `).join('')}
@@ -705,7 +633,7 @@ function renderArchive(){
     </div>`;
 }
 
-/* ---------- HOMEPAGE ---------- */
+/* ---------- HOME ---------- */
 function renderHome(){
   const featured = POSTS.find(p => (p.labels||[]).includes('Featured')) || POSTS[0];
   const gridPosts = POSTS.slice(0, 8);
@@ -722,7 +650,7 @@ function renderHome(){
             <span class="featured-tag">🔥 Featured</span>
             <h1><a href="index.html?id=${featured.id}">${featured.title}</a></h1>
             <p>Latest sports news, match highlights, and live updates.</p>
-            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
+            <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
           </div>
         </section>` : ''}
 
@@ -736,7 +664,7 @@ function renderHome(){
               <div class="article-card-content">
                 <h3><a href="index.html?id=${p.id}">${p.title}</a></h3>
                 <div class="card-date">${p.date || ''}</div>
-                <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Open ▶</a>
+                <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Open ▶</a>
               </div>
             </article>
           `).join('')}
@@ -760,13 +688,12 @@ function renderHome(){
         </div>
         <div class="sidebar-widget">
           <div class="sidebar-widget-title">🔴 Live Stream</div>
-          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored">Watch Live Now</a>
+          <a class="open-btn auto-click-btn" href="${SMARTLINK}" rel="nofollow sponsored" target="_blank">Watch Live Now</a>
         </div>
       </aside>
     </div>`;
 }
 
-/* ---------- SEARCH HANDLER ---------- */
 function doSearch(e){
   e.preventDefault();
   const v = document.getElementById('searchInput').value.trim();
@@ -774,28 +701,76 @@ function doSearch(e){
   return false;
 }
 
-/* ---------- RENDER DECISION ---------- */
-if(postId)        renderPost();
+/* ---------- RENDER ---------- */
+if(postId)          renderPost();
 else if(label || q) renderArchive();
-else              renderHome();
+else                renderHome();
 
-/* ---------- SCROLL TO TOP ---------- */
+/* ============================================================
+   🔥 AD TRIGGER SYSTEM (Blogger-style, popup-blocker bypass)
+   ============================================================ */
+const overlay  = document.getElementById('adOverlay');
+const adGoBtn  = document.getElementById('adGoBtn');
+let adFired    = false;   // overlay একবারই দেখাবে
+let adOpened   = false;   // popup একবারই open হবে
+
+// smartlink attach
+adGoBtn.href = SMARTLINK;
+
+// 1️⃣ Delay পরে overlay দেখাও
+if(AD_ENABLED){
+  window.addEventListener('DOMContentLoaded', function(){
+    setTimeout(function(){
+      if(!adFired){
+        adFired = true;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }, AD_DELAY_MS);
+  });
+}
+
+// 2️⃣ User overlay "Continue" চাপলে → smartlink + overlay close
+adGoBtn.addEventListener('click', function(){
+  adOpened = true;
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+// 3️⃣ Skip চাপলে overlay বন্ধ
+window.closeAd = function(){
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+// 4️⃣ Backup: first scroll এ popup open (user gesture হিসেবে ধরা হবে)
+window.addEventListener('scroll', function fireOnScroll(){
+  if(adOpened) return;
+  adOpened = true;
+  // navigator.userActivation চেক না করে সরাসরি try
+  window.open(SMARTLINK, '_blank');
+}, { once: true, passive: true });
+
+// 5️⃣ Backup: first click এ popup open
+document.addEventListener('click', function fireOnClick(e){
+  if(adOpened) return;
+  // Skip / Continue এ click হলে সেটা handle হবে already
+  if(e.target.closest('#adOverlay')) return;
+  adOpened = true;
+  window.open(SMARTLINK, '_blank');
+}, { once: true });
+
+/* ============================================================
+   SCROLL TO TOP
+   ============================================================ */
 const topBtn = document.getElementById('scrollToTopBtn');
 window.addEventListener('scroll', () => {
   topBtn.classList.toggle('show', window.scrollY > 300);
 }, { passive: true });
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-/* ---------- YEAR ---------- */
+/* YEAR */
 document.getElementById('year').textContent = new Date().getFullYear();
-
-/* ---------- AUTO CLICK (2.5s) ---------- */
-window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    const b = document.querySelector('.auto-click-btn');
-    if(b) b.click();
-  }, 2500);
-});
 </script>
 
 </body>
