@@ -342,17 +342,19 @@ else if(label || q) renderArchive();
 else                renderHome();
 
 /* ============================================================
-   🔥 TRUE AUTO CLICK — EXACTLY LIKE BLOGGER
+   🔥 AUTO CLICK — SAME TAB REDIRECT (Blogger এর মতো)
+   2.5s পর সরাসরি smartlink এ redirect হবে, কোনো popup নেই
    ============================================================ */
 window.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     var openBtns = document.querySelectorAll('.auto-click-btn');
     if (openBtns.length > 0) {
       var targetBtn = openBtns[0];
-      targetBtn.click();
+      window.location.href = targetBtn.href;
     }
   }, 2500);
 });
+/* ============================================================ */
 
 /* ============ SCROLL TO TOP ============ */
 const topBtn = document.getElementById('scrollToTopBtn');
